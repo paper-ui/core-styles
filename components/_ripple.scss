@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// ===========================
+// Module mixins
+// ===========================
+@mixin paper-ripple {
+    @extend %abs-full-el;
+
+    display: block;
+    border-radius: inherit;
+    overflow: hidden;
+    pointer-events: none;
+
+    &__bg,
+    &__waves,
+    &__wave-container,
+    &__wave {
+        @extend %abs-full-el;
+
+        pointer-events: none;
+    }
+
+    &__bg,
+    &__wave {
+        opacity: 0;
+    }
+
+    &__waves,
+    &__wave {
+        overflow: hidden;
+    }
+
+    &__wave-container,
+    &__wave {
+        border-radius: 50%;
+    }
+}
+
+@mixin paper-circle-ripple {
+    &__bg,
+    &__waves {
+        border-radius: 50%;
+    }
+
+    &__wave-container {
+        overflow: hidden;
+    }
+}
