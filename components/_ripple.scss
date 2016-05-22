@@ -12,6 +12,8 @@
  * Licensed under the MIT license.
  */
 
+@import "../core/mixins";
+
 // ===========================
 // Module mixins
 // ===========================
@@ -20,7 +22,6 @@
 
     display: block;
     border-radius: inherit;
-    overflow: hidden;
     pointer-events: none;
 
     &__bg,
@@ -34,27 +35,27 @@
 
     &__bg,
     &__wave {
-        opacity: 0;
+        @extend %transparent;
     }
 
+    &,
     &__waves,
-    &__wave {
-        overflow: hidden;
+    &__wave,
+    &--round &__wave-container {
+        @extend %overflow-hidden;
     }
 
     &__wave-container,
-    &__wave {
-        border-radius: 50%;
+    &__wave,
+    &--round &__bg,
+    &--round &__waves {
+        @extend %circle-el;
     }
 }
 
-@mixin paper-circle-ripple {
-    &__bg,
-    &__waves {
-        border-radius: 50%;
-    }
-
-    &__wave-container {
-        overflow: hidden;
-    }
+// ===========================
+// Module classes
+// ===========================
+.paper-ripple {
+    @include paper-ripple;
 }
