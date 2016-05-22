@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// ===========================
+// Helper classes
+// ===========================
+%abs-full-el {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+%circle-el {
+    border-radius: 50%;
+}
+
+%overflow-hidden {
+    overflow: hidden;
+}
+
+%transparent {
+    opacity: 0;
+}
