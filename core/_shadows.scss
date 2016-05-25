@@ -47,9 +47,13 @@ $default-shadow-bottom-blur: 5px 17px 15px 28px 24px;
 
 @mixin paper-shadow-classes {
     @for $i from 1 to 6 {
-        .shadow-#{$i},
-        [shadow="#{$i}"] {
+        .paper-shadow--level-#{$i} {
             @include paper-shadow($i);
         }
     }
 }
+
+// ===========================
+// Module classes
+// ===========================
+@include paper-shadow-classes;
