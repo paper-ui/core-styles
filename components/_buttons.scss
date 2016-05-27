@@ -1,0 +1,252 @@
+@charset "UTF-8";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// http://www.google.com/design/spec/components/buttons.html
+
+@import "../core/variables", "../core/shadows", "../core/colors", "../core/mixins";
+
+// ===========================
+// Module variables
+// ===========================
+$default-button-height: 36px;
+$default-button-min-width: 88px;
+$default-button-margin: 0 4px;
+$default-button-padding: 0 8px;
+$default-button-border-radius: 2px;
+$default-button-font-size: 14px;
+$default-button-icon-size: 24px;
+
+$default-flat-button-hover-color: rgba(153, 153, 153, 0.2);
+$default-flat-button-pressed-color: rgba(153, 153, 153, 0.4);
+$default-flat-button-dark-hover-color: rgba(204, 204, 204, 0.15);
+$default-flat-button-dark-pressed-color: rgba(204, 204, 204, 0.25);
+
+$default-raised-button-elevation: 2;
+$default-raised-button-pressed-elevation: 8;
+
+$default-fab-size: 56px;
+$default-fab-mini-size: 40px;
+$default-fab-elevation: 6;
+$default-fab-pressed-elevation: 12;
+
+$default-icon-button-size: 40px;
+$default-icon-button-padding: 8px;
+
+// ===========================
+// Module mixins
+// ===========================
+%button-icon {
+    i,
+    .paper-icon {
+        font-size: $default-button-icon-size;
+        line-height: $default-button-icon-size;
+    }
+}
+
+@mixin paper-button-base {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: $default-button-font-size;
+    color: paper-text-color('primary');
+    transition:
+            box-shadow 0.25s $default-easing-function,
+            background-color  0.25s $default-easing-function,
+            color  0.25s $default-easing-function;
+    margin: $default-button-margin;
+    padding: $default-button-padding;
+
+    .paper-ripple {
+        z-index: -1;
+    }
+
+    &:disabled,
+    &[disabled] {
+        cursor: auto;
+        color: paper-text-color('disabled') !important;
+        background-color: transparent !important;
+    }
+
+    &--noink {
+        &:disabled,
+        &[disabled] {
+            pointer-events: none;
+        }
+    }
+
+    &__toggle-bg {
+        width: 100%;
+        height: 100%;
+        background: none;
+        border-radius: inherit;
+    }
+}
+
+@mixin button-raised {
+    @include paper-shadow(1);
+
+    &:active {
+        @include paper-shadow(2);
+    }
+
+    &--focus {
+        @include paper-shadow(3);
+    }
+
+    &:disabled,
+    &[disabled] {
+        background-color: paper-text-color('divider') !important;
+        box-shadow: none;
+    }
+}
+
+@mixin paper-button {
+    height: $default-button-height;
+    min-width: $default-button-min-width;
+    border-radius: $default-button-border-radius;
+
+    &:not(&--raised):active {
+        background-color: $default-flat-button-pressed-color;
+    }
+
+    &--hover:hover {
+        background-color: $default-flat-button-hover-color;
+    }
+
+    &--raised {
+        z-index: $default-raised-button-elevation;
+    }
+
+    &--toggles.paper-button--active {
+        @include paper-shadow(2);
+    }
+}
+
+@mixin paper-fab {
+    @extend %circle-el;
+    @extend %button-icon;
+
+    width: $default-fab-size;
+    height: $default-fab-size;
+    padding: ($default-fab-size - $default-button-icon-size) / 2;
+
+    &--mini {
+        width: $default-fab-mini-size;
+        height: $default-fab-mini-size;
+        padding: ($default-fab-mini-size - $default-button-icon-size) / 2;
+    }
+}
+
+@mixin paper-icon-button {
+    @extend %circle-el;
+    @extend %button-icon;
+
+    width: $default-icon-button-size;
+    min-width: $default-icon-button-size;
+    height: $default-icon-button-size;
+    padding: $default-icon-button-padding;
+    margin: 0;
+}
+
+@mixin anchor-paper-button {
+    vertical-align: middle;
+    line-height: $default-button-height;
+    display: inline-block;
+}
+
+// TODO: apply dark theme styling
+//@mixin paper-dark-button(
+//    $raised-button-class-name: name('raised'),
+//    $fab-class-name: name('fab'),
+//    $icon-button-class-name: name('icon-button')
+//) {
+//    color: paper-text-color('primary', true);
+//
+//    &:not(.#{$raised-button-class-name}):not(.#{$fab-class-name}):not(.#{$icon-button-class-name}) {
+//        &:hover,
+//        &[focused] {
+//            background-color: rgba(#cccccc, 0.15);
+//        }
+//
+//        &:active {
+//            background-color: rgba(#cccccc, 0.25);
+//        }
+//    }
+//
+//    &.#{$raised-button-class-name},
+//    &.#{$fab-class-name} {
+//        background-color: paper-color($default-primary-color, '500');
+//
+//        &:hover,
+//        &[focused] {
+//            background-color: paper-color($default-primary-color, '600');
+//        }
+//
+//        &:active {
+//            background-color: paper-color($default-primary-color, '700');
+//        }
+//    }
+//
+//    &:disabled,
+//    &[disabled] {
+//        color: paper-text-color('disabled', true) !important;
+//
+//        &.#{$raised-button-class-name},
+//        &.#{$fab-class-name} {
+//            background-color: paper-text-color('divider', true) !important;
+//        }
+//    }
+//
+//    &[toggles][active] {
+//        background-color: rgba(paper-text-color('primary', true), 0.25);
+//    }
+//}
+
+// ===========================
+// Module classes
+// ===========================
+.paper-button,
+.paper-fab,
+.paper-icon-button {
+    @include paper-button-base;
+}
+
+.paper-button {
+    @include paper-button;
+}
+
+.paper-fab {
+    @include paper-fab;
+}
+
+.paper-icon-button {
+    @include paper-icon-button;
+}
+
+.paper-button--raised,
+.paper-button--toggles,
+.paper-fab {
+    @include button-raised;
+}
+
+a.paper-button,
+a.paper-fab,
+a.paper-icon-button {
+    @include anchor-paper-button;
+}
