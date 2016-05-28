@@ -1,6 +1,6 @@
 # Formal components structure specification
 
-### Ripple component
+### :package: Ripple component
 
 Material design: [:link: Surface reaction](https://www.google.com/design/spec/animation/responsive-interaction.html#responsive-interaction-surface-reaction).
 
@@ -37,7 +37,7 @@ The component has the next class names with their respective *modifiers* (if any
 - `paper-ripple`
  - `--round` - If applied, the ripple effect will be produced within a circle.
 
-### Button component
+### :package: Button component
 
 Material design: [:link: Buttons](https://www.google.com/design/spec/components/buttons.html).
 
@@ -70,7 +70,7 @@ The component has the next class names with their respective *modifiers* (if any
  - `--toggles` - If applied, the button toggles the active state with each tap or press of the `spacebar`.
  - `--active` - If applied, the button is a toggle and is currently in the active state.
 
-### FloatingActionButton component
+### :package: FloatingActionButton component
 
 Material design: [:link: Floating Action Button](https://www.google.com/design/spec/components/buttons-floating-action-button.html).
 
@@ -95,7 +95,7 @@ The component has the next class names with their respective *modifiers* (if any
  - `--mini` - If applied, the element should be styled as *mini* FAB.
  - `--focus`
 
-### IconButton component
+### :package: IconButton component
 
 Material design: [:link: Icon toggles](https://www.google.com/design/spec/components/buttons.html#buttons-toggle-buttons).
 
@@ -110,8 +110,9 @@ The component structure is next:
 </div>
 ```
 
-Next class-names are belongs to the **IconButton* component:
+Next class-names are belongs to the **IconButton** component:
 - `paper-icon-button`
+ - `paper-button__toggle-bg`
  - [`paper-ripple`](#ripple-component)
 
 The component has the next class names with their respective *modifiers* (if any):
@@ -120,3 +121,5 @@ The component has the next class names with their respective *modifiers* (if any
  - `--hover`
  - `--toggles` - If applied, the button toggles the active state with each tap or press of the `spacebar`.
  - `--active` - If applied, the button is a toggle and is currently in the active state.
+
+### :package: Some component
