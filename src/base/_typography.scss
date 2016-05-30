@@ -1,0 +1,191 @@
+@charset "UTF-8";
+@import "./colors";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// Docs: https://www.google.com/design/spec/style/typography.html
+
+// ===========================
+// Module variables
+// ===========================
+$paper-font-weights: (
+        'thin': 200,
+        'light': 300,
+        'regular': 400,
+        'medium': 500,
+        'bold': 700,
+        'black': 900
+);
+
+$paper-typography-styles: (
+        'display4': (
+                'color': 'secondary',
+                'weight': 300,
+                'line-wrapping': true,
+                'size': 112px,
+                'spacing': -0.01em,
+        ),
+        'display3': (
+                'color': 'secondary',
+                'weight': 400,
+                'line-wrapping': true,
+                'size': 56px,
+                'spacing': -0.005em,
+        ),
+        'display2': (
+                'color': 'secondary',
+                'weight': 400,
+                'line-wrapping': false,
+                'size': 45px,
+                'height': 48px
+        ),
+        'display1': (
+                'color': 'secondary',
+                'weight': 400,
+                'line-wrapping': false,
+                'size': 34px,
+                'height': 40px
+        ),
+        'headline': (
+                'color': 'primary',
+                'weight': 400,
+                'line-wrapping': false,
+                'size': 24px,
+                'height': 32px
+        ),
+        'title': (
+                'color': 'primary',
+                'weight': 500,
+                'line-wrapping': true,
+                'size': 20px,
+                'spacing': 0.005em,
+        ),
+        'subhead': (
+                'color': 'primary',
+                'weight': 400,
+                'line-wrapping': false,
+                'size': 16px,
+                'spacing': 0.01em,
+                'height': 24px
+        ),
+        'body2': (
+                'color': 'primary',
+                'weight': 500,
+                'line-wrapping': false,
+                'size': 14px,
+                'spacing': 0.01em,
+                'height': 24px
+        ),
+        'body1': (
+                'color': 'primary',
+                'weight': 400,
+                'line-wrapping': false,
+                'size': 14px,
+                'spacing': 0.01em,
+                'height': 20px
+        ),
+        'caption': (
+                'color': 'secondary',
+                'weight': 400,
+                'line-wrapping': true,
+                'size': 12px,
+                'spacing': 0.02em,
+        ),
+        'button': (
+                'color': 'primary',
+                'weight': 500,
+                'line-wrapping': true,
+                'size': 14px,
+                'spacing': 0.01em,
+        )
+);
+
+// ===========================
+// Module mixins
+// ===========================
+@mixin paper-typography($name: 'body1', $is-dark: flase) {
+    $style: map-get($paper-typography-styles, $name);
+
+    $spacing: map-get($style, 'spacing');
+    $height: map-get($style, 'height');
+
+    font-weight: map-get($style, 'weight');
+    font-size: map-get($style, 'size');
+    color: paper-text-color(map-get($style, 'color'), $is-dark);
+
+    @if $spacing {
+        letter-spacing: $spacing;
+    }
+
+    @if $height {
+        line-height: $height;
+    }
+
+    @if map-get($style, 'line-wrapping') == true {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    @if $name == 'button' {
+        text-transform: uppercase;
+    }
+}
+
+@mixin paper-typography-classes {
+    @each $name, $style in $paper-typography-styles {
+        $optional-class: null;
+
+        @if ($name == 'display4') {
+            $optional-class: 'h1'
+        } @else if ($name == 'display3') {
+            $optional-class: 'h2';
+        } @else if ($name == 'display2') {
+            $optional-class: 'h3';
+        } @else if ($name == 'display1') {
+            $optional-class: 'h4'
+        } @else if ($name == 'body1') {
+            $optional-class: 'p,
+            .paper-text';
+        }
+
+        "#{if($optional-class == null, "", $optional-class + ",")}
+        .paper-text--#{$name}" {
+            @include paper-typography($name);
+        }
+    }
+}
+
+@mixin paper-dark-typography-classes {
+    @each $name, $style in $paper-typography-styles {
+        $optional-class: null;
+
+        @if ($name == 'display4') {
+            $optional-class: 'h1'
+        } @else if ($name == 'display3') {
+            $optional-class: 'h2';
+        } @else if ($name == 'display2') {
+            $optional-class: 'h3';
+        } @else if ($name == 'display1') {
+            $optional-class: 'h4'
+        } @else if ($name == 'body1') {
+            $optional-class: 'p,
+            .paper-text';
+        }
+
+        "#{if($optional-class == null, "", $optional-class + ",")}
+        .paper-text--#{$name}" {
+            color: paper-text-color(map-get($style, 'color'), true);
+        }
+    }
+}
