@@ -98,20 +98,20 @@ $indigo-palette: (
         'a700': #304FFE
 );
 $blue-palette: (
-        'blue-50': #E3F2FD,
-        'blue-100': #BBDEFB,
-        'blue-200': #90CAF9,
-        'blue-300': #64B5F6,
-        'blue-400': #42A5F5,
-        'blue-500': #2196F3,
-        'blue-600': #1E88E5,
-        'blue-700': #1976D2,
-        'blue-800': #1565C0,
-        'blue-900': #0D47A1,
-        'blue-a100': #82B1FF,
-        'blue-a200': #448AFF,
-        'blue-a400': #2979FF,
-        'blue-a700': #2962FF
+        '50': #E3F2FD,
+        '100': #BBDEFB,
+        '200': #90CAF9,
+        '300': #64B5F6,
+        '400': #42A5F5,
+        '500': #2196F3,
+        '600': #1E88E5,
+        '700': #1976D2,
+        '800': #1565C0,
+        '900': #0D47A1,
+        'a100': #82B1FF,
+        'a200': #448AFF,
+        'a400': #2979FF,
+        'a700': #2962FF
 );
 $light-blue-palette: (
         '50': #E1F5FE,
@@ -345,17 +345,34 @@ $light-text-opacity-values: 0.87 0.54 0.26 0.12;
 // Module mixins
 // ===========================
 
+// TODO: align with BEM
 // Printing out color classes
 @mixin paper-color-classes {
     @each $color-name, $color-palette in $paper-colors {
         $color: map-get($color-palette, '500');
 
-        .#{$color-name} {
-            background-color: $color !important;
+        &--color-#{$color-name} {
+            color: $color !important;
         }
 
-        .#{$color-name}-text {
-            color: $color !important;
+        &--bg-#{$color-name} {
+            background-color: $color !important;
+        }
+    }
+}
+
+@mixin paper-color-shades-classes {
+    @each $name, $palette in $paper-colors {
+        @each $shade, $val in $palette {
+            @if($shade != '500') {
+                &--color-#{$name}-#{$shade} {
+                    color: $val !important;
+                }
+
+                &--bg-#{$name}-#{$shade} {
+                    background-color: $val !important;
+                }
+            }
         }
     }
 }
@@ -363,11 +380,11 @@ $light-text-opacity-values: 0.87 0.54 0.26 0.12;
 // Printing out text color classes
 @mixin paper-text-color-classes {
     @for $i from 1 through length($text-opacity-names) {
-        .#{nth($text-opacity-names, $i)}-text {
+        &--color-#{nth($text-opacity-names, $i)} {
             color: rgba(0, 0, 0, nth($dark-text-opacity-values, $i)) !important;
         }
 
-        .#{nth($text-opacity-names, $i)}-color {
+        &--bg-#{nth($text-opacity-names, $i)} {
             background-color: rgba(0, 0, 0, nth($dark-text-opacity-values, $i)) !important;
         }
     }
@@ -375,14 +392,20 @@ $light-text-opacity-values: 0.87 0.54 0.26 0.12;
 
 @mixin paper-dark-text-color-classes {
     @for $i from 1 through length($text-opacity-names) {
-        .#{nth($text-opacity-names, $i)}-text {
+        &--color-#{nth($text-opacity-names, $i)} {
             color: rgba(255, 255, 255, nth($light-text-opacity-values, $i)) !important;
         }
 
-        .#{nth($text-opacity-names, $i)}-color {
+        &--bg-#{nth($text-opacity-names, $i)} {
             background-color: rgba(255, 255, 255, nth($light-text-opacity-values, $i)) !important;
         }
     }
+}
+
+.paper {
+    @include paper-color-classes;
+    @include paper-color-shades-classes;
+    @include paper-text-color-classes;
 }
 
 // ===========================
