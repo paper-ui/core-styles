@@ -345,7 +345,6 @@ $light-text-opacity-values: 0.87 0.54 0.26 0.12;
 // Module mixins
 // ===========================
 
-// TODO: align with BEM
 // Printing out color classes
 @mixin paper-color-classes {
     @each $color-name, $color-palette in $paper-colors {
@@ -400,12 +399,6 @@ $light-text-opacity-values: 0.87 0.54 0.26 0.12;
             background-color: rgba(255, 255, 255, nth($light-text-opacity-values, $i)) !important;
         }
     }
-}
-
-.paper {
-    @include paper-color-classes;
-    @include paper-color-shades-classes;
-    @include paper-text-color-classes;
 }
 
 // ===========================
