@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "./variables", "../base/colors";
 
 /**
  * This file\code is part of Paper UI project.
@@ -35,4 +36,21 @@
 
 %transparent {
     opacity: 0;
+}
+
+// Colors
+%primary-color {
+    color: paper-color($default-primary-color);
+}
+
+%primary-bg {
+    background-color: paper-color($default-primary-color);
+}
+
+%accent-color {
+    color: paper-color($default-accent-color);
+}
+
+%accen-bg {
+    background-color: paper-color($default-accent-color);
 }
