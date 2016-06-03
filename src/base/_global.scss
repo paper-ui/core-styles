@@ -1,0 +1,57 @@
+@charset "UTF-8";
+@import "../helpers/variables", "./typography", "./shadows";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+html,
+body {
+    font: {
+        family: $default-font-family;
+        size: $default-font-size;
+        weight: $default-font-weight;  }
+
+    color: paper-text-color('primary');
+    background-color: paper-color('grey', '50');  }
+
+h5, h6 {
+    font-weight: 400;  }
+
+.thin {
+    font-weight: 200;  }
+
+.light {
+    font-weight: 300;  }
+
+.bold {
+    font-weight: 700;  }
+
+small {
+    font-size: 75%;  }
+
+strong {
+    font-weight: 500;  }
+
+em {
+    font-style: italic;  }
+
+// typography
+@include paper-typography-classes;
+
+// shadows
+@include paper-shadow-classes;
+
+.paper {
+    @include paper-color-classes;
+    @include paper-color-shades-classes;
+    @include paper-text-color-classes;
+}
