@@ -113,7 +113,7 @@ $paper-typography-styles: (
 // ===========================
 // Module mixins
 // ===========================
-@mixin paper-typography($name: 'body1', $is-dark: flase) {
+@mixin paper-typography($name: 'body1', $is-dark: false) {
     $style: map-get($paper-typography-styles, $name);
 
     $spacing: map-get($style, 'spacing');
