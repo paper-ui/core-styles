@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Colors - Core Styles - Paper UI</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico?v=0"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-grid/dist/grid.min.css">
+    <link rel="stylesheet" href="paper-ui.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header--fixed paper--primary-bg paper-shadow--level-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="toolbar">
+                        <div class="empty-menu-btn visible-xs-block visible-sm-block"></div>
+                        <span class="paper--color-white paper-text--headline">Paper UI Core Styles - Color</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="page-header paper--primary-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="paper--color-white hidden-xs">Paper UI Core Styles</h2>
+                    <h4 class="paper--color-white hidden-lg hidden-md hidden-sm" style="padding: 0 20px;">Paper UI Core Styles - Color</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="module section-title">
+                    <h4 class="paper--primary-color">Color</h4>
+                    <span class="paper-text--title">Color in material design is inspired by bold hues juxtaposed with muted environments, deep shadows, and bright highlights.</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="clear: left;">
+                <div class="module">
+                    <nav class="paper-chapter-toc">
+                        <h1>Contents</h1>
+                        <ul>
+                            <li><a href="#color-palette">Color palette</a></li>
+                            <li><a href="#text-bg-colors">Text and background colors</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="module">
+                    <h4 class="paper--primary-color paper-text--headline" id="color-palette">Color palette</h4>
+                    <p>
+                        This color palette comprises primary and accent colors that can be used for illustration or to develop your brand colors. They’ve been designed to work harmoniously with each other.
+                    </p>
+                    <p>
+                        The color palette starts with primary colors and fills in the spectrum to create a complete and usable palette for Android, Web, and iOS. Google suggests using the 500 colors as the primary colors in your app and the other colors as accents colors.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">Usage</h5>
+                    <p>
+                        All the color palette class names follows next formatting rules: <code>.paper--{type}-{name}-{shade}</code>,
+                        <br>
+                        where <code>{type}</code> is either "<em>bg</em>" or "<em>color</em>" which indicates how color would apply ("<em>bg</em>" as background color, and "<em>color</em>" as text color),
+                        <code>{name}</code> is the name of a color from palette below (e.g. red, pink etc.), and <code>{shade}</code> numerical value of its shade (e.g. 50, 100 etc.).
+                    </p>
+                    <p>
+                        Let's say you want to fill some element within purple color with the shade of 700. In this case needed class name will look like following: <code>.paper--bg-purple-700</code>.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div style="display: block;" class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-red">
+                            <span class="name">Red</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#F44336</span>
+                        </li>
+                        <li class="divider paper--bg-red-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FFEBEE</span>
+                        </li>
+                        <li class="paper--bg-red-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#FFCDD2</span>
+                        </li>
+                        <li class="paper--bg-red-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#EF9A9A</span>
+                        </li>
+                        <li class="paper--bg-red-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#E57373</span>
+                        </li>
+                        <li class="paper--bg-red-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#EF5350</span>
+                        </li>
+                        <li class="paper--bg-red">
+                            <span class="shade">500</span>
+                            <span class="hex">#F44336</span>
+                        </li>
+                        <li class="paper--bg-red-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#E53935</span>
+                        </li>
+                        <li class="paper--bg-red-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#D32F2F</span>
+                        </li>
+                        <li class="paper--bg-red-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#C62828</span>
+                        </li>
+                        <li class="paper--bg-red-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#B71C1C</span>
+                        </li>
+
+                        <li class="divider paper--bg-red-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FF8A80</span>
+                        </li>
+                        <li class="paper--bg-red-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#FF5252</span>
+                        </li>
+                        <li class="paper--bg-red-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#FF1744</span>
+                        </li>
+                        <li class="paper--bg-red-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#D50000</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-pink">
+                            <span class="name">Pink</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#E91E63</span>
+                        </li>
+                        <li class="divider paper--bg-pink-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FCE4EC</span>
+                        </li>
+                        <li class="paper--bg-pink-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#F8BBD0</span>
+                        </li>
+                        <li class="paper--bg-pink-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#F48FB1</span>
+                        </li>
+                        <li class="paper--bg-pink-300">
+                            <span class="shade">300</span>
+                            <span class="hex">#F06292</span>
+                        </li>
+                        <li class="paper--bg-pink-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#EC407A</span>
+                        </li>
+                        <li class="paper--bg-pink">
+                            <span class="shade">500</span>
+                            <span class="hex">#E91E63</span>
+                        </li>
+                        <li class="paper--bg-pink-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#D81B60</span>
+                        </li>
+                        <li class="paper--bg-pink-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#C2185B</span>
+                        </li>
+                        <li class="paper--bg-pink-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#AD1457</span>
+                        </li>
+                        <li class="paper--bg-pink-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#880E4F</span>
+                        </li>
+
+                        <li class="divider paper--bg-pink-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FF80AB</span>
+                        </li>
+                        <li class="paper--bg-pink-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#FF4081</span>
+                        </li>
+                        <li class="paper--bg-pink-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#F50057</span>
+                        </li>
+                        <li class="paper--bg-pink-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#C51162</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-purple">
+                            <span class="name">Purple</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#9C27B0</span>
+                        </li>
+                        <li class="divider paper--bg-purple-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#F3E5F5</span>
+                        </li>
+                        <li class="paper--bg-purple-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#E1BEE7</span>
+                        </li>
+                        <li class="paper--bg-purple-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#CE93D8</span>
+                        </li>
+                        <li class="paper--bg-purple-300">
+                            <span class="shade">300</span>
+                            <span class="hex">#BA68C8</span>
+                        </li>
+                        <li class="paper--bg-purple-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#AB47BC</span>
+                        </li>
+                        <li class="paper--bg-purple">
+                            <span class="shade">500</span>
+                            <span class="hex">#9C27B0</span>
+                        </li>
+                        <li class="paper--bg-purple-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#8E24AA</span>
+                        </li>
+                        <li class="paper--bg-purple-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#7B1FA2</span>
+                        </li>
+                        <li class="paper--bg-purple-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#6A1B9A</span>
+                        </li>
+                        <li class="paper--bg-purple-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#4A148C</span>
+                        </li>
+
+                        <li class="divider paper--bg-purple-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#EA80FC</span>
+                        </li>
+                        <li class="paper--bg-purple-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#E040FB</span>
+                        </li>
+                        <li class="paper--bg-purple-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#D500F9</span>
+                        </li>
+                        <li class="paper--bg-purple-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#AA00FF</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-deep-purple">
+                            <span class="name">Deep Purple</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#673AB7</span>
+                        </li>
+                        <li class="divider paper--bg-deep-purple-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#EDE7F6</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#D1C4E9</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#B39DDB</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-300">
+                            <span class="shade">300</span>
+                            <span class="hex">#9575CD</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#7E57C2</span>
+                        </li>
+                        <li class="paper--bg-deep-purple">
+                            <span class="shade">500</span>
+                            <span class="hex">#673AB7</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#5E35B1</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#512DA8</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#4527A0</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#311B92</span>
+                        </li>
+
+                        <li class="divider paper--bg-deep-purple-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#B388FF</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#7C4DFF</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#651FFF</span>
+                        </li>
+                        <li class="paper--bg-deep-purple-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#6200EA</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-indigo">
+                            <span class="name">Indigo</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#3F51B5</span>
+                        </li>
+                        <li class="divider paper--bg-indigo-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E8EAF6</span>
+                        </li>
+                        <li class="paper--bg-indigo-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#C5CAE9</span>
+                        </li>
+                        <li class="paper--bg-indigo-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#9FA8DA</span>
+                        </li>
+                        <li class="paper--bg-indigo-300">
+                            <span class="shade">300</span>
+                            <span class="hex">#7986CB</span>
+                        </li>
+                        <li class="paper--bg-indigo-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#5C6BC0</span>
+                        </li>
+                        <li class="paper--bg-indigo">
+                            <span class="shade">500</span>
+                            <span class="hex">#3F51B5</span>
+                        </li>
+                        <li class="paper--bg-indigo-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#3949AB</span>
+                        </li>
+                        <li class="paper--bg-indigo-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#303F9F</span>
+                        </li>
+                        <li class="paper--bg-indigo-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#283593</span>
+                        </li>
+                        <li class="paper--bg-indigo-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#1A237E</span>
+                        </li>
+
+                        <li class="divider paper--bg-indigo-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#8C9EFF</span>
+                        </li>
+                        <li class="paper--bg-indigo-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#536DFE</span>
+                        </li>
+                        <li class="paper--bg-indigo-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#3D5AFE</span>
+                        </li>
+                        <li class="paper--bg-indigo-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#304FFE</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-blue">
+                            <span class="name">Blue</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#2196F3</span>
+                        </li>
+                        <li class="divider paper--bg-blue-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E3F2FD</span>
+                        </li>
+                        <li class="paper--bg-blue-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#BBDEFB</span>
+                        </li>
+                        <li class="paper--bg-blue-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#90CAF9</span>
+                        </li>
+                        <li class="paper--bg-blue-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#64B5F6</span>
+                        </li>
+                        <li class="paper--bg-blue-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#42A5F5</span>
+                        </li>
+                        <li class="paper--bg-blue">
+                            <span class="shade">500</span>
+                            <span class="hex">#2196F3</span>
+                        </li>
+                        <li class="paper--bg-blue-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#1E88E5</span>
+                        </li>
+                        <li class="paper--bg-blue-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#1976D2</span>
+                        </li>
+                        <li class="paper--bg-blue-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#1565C0</span>
+                        </li>
+                        <li class="paper--bg-blue-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#0D47A1</span>
+                        </li>
+
+                        <li class="divider paper--bg-blue-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#82B1FF</span>
+                        </li>
+                        <li class="paper--bg-blue-a200">
+                            <span class="shade">A200</span>
+                            <span class="hex">#448AFF</span>
+                        </li>
+                        <li class="paper--bg-blue-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#2979FF</span>
+                        </li>
+                        <li class="paper--bg-blue-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#2962FF</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-light-blue paper--color-primary">
+                            <span class="name">Light Blue</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#03A9F4</span>
+                        </li>
+                        <li class="divider paper--bg-light-blue-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E1F5FE</span>
+                        </li>
+                        <li class="paper--bg-light-blue-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#B3E5FC</span>
+                        </li>
+                        <li class="paper--bg-light-blue-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#81D4FA</span>
+                        </li>
+                        <li class="paper--bg-light-blue-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#4FC3F7</span>
+                        </li>
+                        <li class="paper--bg-light-blue-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#29B6F6</span>
+                        </li>
+                        <li class="paper--bg-light-blue paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#03A9F4</span>
+                        </li>
+                        <li class="paper--bg-light-blue-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#039BE5</span>
+                        </li>
+                        <li class="paper--bg-light-blue-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#0288D1</span>
+                        </li>
+                        <li class="paper--bg-light-blue-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#0277BD</span>
+                        </li>
+                        <li class="paper--bg-light-blue-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#01579B</span>
+                        </li>
+
+                        <li class="divider paper--bg-light-blue-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#80D8FF</span>
+                        </li>
+                        <li class="paper--bg-light-blue-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#40C4FF</span>
+                        </li>
+                        <li class="paper--bg-light-blue-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#00B0FF</span>
+                        </li>
+                        <li class="paper--bg-light-blue-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#0091EA</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-cyan paper--color-primary">
+                            <span class="name">Cyan</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#00BCD4</span>
+                        </li>
+                        <li class="divider paper--bg-cyan-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E0F7FA</span>
+                        </li>
+                        <li class="paper--bg-cyan-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#B2EBF2</span>
+                        </li>
+                        <li class="paper--bg-cyan-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#80DEEA</span>
+                        </li>
+                        <li class="paper--bg-cyan-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#4DD0E1</span>
+                        </li>
+                        <li class="paper--bg-cyan-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#26C6DA</span>
+                        </li>
+                        <li class="paper--bg-cyan paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#00BCD4</span>
+                        </li>
+                        <li class="paper--bg-cyan-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#00ACC1</span>
+                        </li>
+                        <li class="paper--bg-cyan-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#0097A7</span>
+                        </li>
+                        <li class="paper--bg-cyan-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#00838F</span>
+                        </li>
+                        <li class="paper--bg-cyan-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#006064</span>
+                        </li>
+
+                        <li class="divider paper--bg-cyan-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#84FFFF</span>
+                        </li>
+                        <li class="paper--bg-cyan-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#18FFFF</span>
+                        </li>
+                        <li class="paper--bg-cyan-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#00E5FF</span>
+                        </li>
+                        <li class="paper--bg-cyan-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#00B8D4</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-teal">
+                            <span class="name">Teal</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#009688</span>
+                        </li>
+                        <li class="divider paper--bg-teal-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E0F2F1</span>
+                        </li>
+                        <li class="paper--bg-teal-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#B2DFDB</span>
+                        </li>
+                        <li class="paper--bg-teal-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#80CBC4</span>
+                        </li>
+                        <li class="paper--bg-teal-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#4DB6AC</span>
+                        </li>
+                        <li class="paper--bg-teal-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#26A69A</span>
+                        </li>
+                        <li class="paper--bg-teal">
+                            <span class="shade">500</span>
+                            <span class="hex">#009688</span>
+                        </li>
+                        <li class="paper--bg-teal-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#00897B</span>
+                        </li>
+                        <li class="paper--bg-teal-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#00796B</span>
+                        </li>
+                        <li class="paper--bg-teal-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#00695C</span>
+                        </li>
+                        <li class="paper--bg-teal-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#004D40</span>
+                        </li>
+
+                        <li class="divider paper--bg-teal-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#A7FFEB</span>
+                        </li>
+                        <li class="paper--bg-teal-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#64FFDA</span>
+                        </li>
+                        <li class="paper--bg-teal-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#1DE9B6</span>
+                        </li>
+                        <li class="paper--bg-teal-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#00BFA5</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-green paper--color-primary">
+                            <span class="name">Green</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#4CAF50</span>
+                        </li>
+                        <li class="divider paper--bg-green-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#E8F5E9</span>
+                        </li>
+                        <li class="paper--bg-green-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#C8E6C9</span>
+                        </li>
+                        <li class="paper--bg-green-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#A5D6A7</span>
+                        </li>
+                        <li class="paper--bg-green-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#81C784</span>
+                        </li>
+                        <li class="paper--bg-green-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#66BB6A</span>
+                        </li>
+                        <li class="paper--bg-green paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#4CAF50</span>
+                        </li>
+                        <li class="paper--bg-green-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#43A047</span>
+                        </li>
+                        <li class="paper--bg-green-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#388E3C</span>
+                        </li>
+                        <li class="paper--bg-green-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#2E7D32</span>
+                        </li>
+                        <li class="paper--bg-green-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#1B5E20</span>
+                        </li>
+
+                        <li class="divider paper--bg-green-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#B9F6CA</span>
+                        </li>
+                        <li class="paper--bg-green-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#69F0AE</span>
+                        </li>
+                        <li class="paper--bg-green-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#00E676</span>
+                        </li>
+                        <li class="paper--bg-green-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#00C853</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-light-green paper--color-primary">
+                            <span class="name">Light Green</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#8BC34A</span>
+                        </li>
+                        <li class="divider paper--bg-light-green-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#F1F8E9</span>
+                        </li>
+                        <li class="paper--bg-light-green-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#DCEDC8</span>
+                        </li>
+                        <li class="paper--bg-light-green-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#C5E1A5</span>
+                        </li>
+                        <li class="paper--bg-light-green-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#AED581</span>
+                        </li>
+                        <li class="paper--bg-light-green-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#9CCC65</span>
+                        </li>
+                        <li class="paper--bg-light-green paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#8BC34A</span>
+                        </li>
+                        <li class="paper--bg-light-green-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#7CB342</span>
+                        </li>
+                        <li class="paper--bg-light-green-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#689F38</span>
+                        </li>
+                        <li class="paper--bg-light-green-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#558B2F</span>
+                        </li>
+                        <li class="paper--bg-light-green-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#33691E</span>
+                        </li>
+
+                        <li class="divider paper--bg-light-green-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#CCFF90</span>
+                        </li>
+                        <li class="paper--bg-light-green-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#B2FF59</span>
+                        </li>
+                        <li class="paper--bg-light-green-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#76FF03</span>
+                        </li>
+                        <li class="paper--bg-light-green-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#64DD17</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-lime paper--color-primary">
+                            <span class="name">Lime</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#CDDC39</span>
+                        </li>
+                        <li class="divider paper--bg-lime-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#F9FBE7</span>
+                        </li>
+                        <li class="paper--bg-lime-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#F0F4C3</span>
+                        </li>
+                        <li class="paper--bg-lime-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#E6EE9C</span>
+                        </li>
+                        <li class="paper--bg-lime-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#DCE775</span>
+                        </li>
+                        <li class="paper--bg-lime-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#D4E157</span>
+                        </li>
+                        <li class="paper--bg-lime paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#CDDC39</span>
+                        </li>
+                        <li class="paper--bg-lime-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#C0CA33</span>
+                        </li>
+                        <li class="paper--bg-lime-700 paper--color-primary">
+                            <span class="shade">700</span>
+                            <span class="hex">#AFB42B</span>
+                        </li>
+                        <li class="paper--bg-lime-800 paper--color-primary">
+                            <span class="shade">800</span>
+                            <span class="hex">#9E9D24</span>
+                        </li>
+                        <li class="paper--bg-lime-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#827717</span>
+                        </li>
+
+                        <li class="divider paper--bg-lime-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#F4FF81</span>
+                        </li>
+                        <li class="paper--bg-lime-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#EEFF41</span>
+                        </li>
+                        <li class="paper--bg-lime-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#C6FF00</span>
+                        </li>
+                        <li class="paper--bg-lime-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#AEEA00</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-yellow paper--color-primary">
+                            <span class="name">Yellow</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#FFEB3B</span>
+                        </li>
+                        <li class="divider paper--bg-yellow-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FFFDE7</span>
+                        </li>
+                        <li class="paper--bg-yellow-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#FFF9C4</span>
+                        </li>
+                        <li class="paper--bg-yellow-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#FFF59D</span>
+                        </li>
+                        <li class="paper--bg-yellow-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#FFF176</span>
+                        </li>
+                        <li class="paper--bg-yellow-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#FFEE58</span>
+                        </li>
+                        <li class="paper--bg-yellow paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#FFEB3B</span>
+                        </li>
+                        <li class="paper--bg-yellow-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#FDD835</span>
+                        </li>
+                        <li class="paper--bg-yellow-700 paper--color-primary">
+                            <span class="shade">700</span>
+                            <span class="hex">#FBC02D</span>
+                        </li>
+                        <li class="paper--bg-yellow-800 paper--color-primary">
+                            <span class="shade">800</span>
+                            <span class="hex">#F9A825</span>
+                        </li>
+                        <li class="paper--bg-yellow-900 paper--color-primary">
+                            <span class="shade">900</span>
+                            <span class="hex">#F57F17</span>
+                        </li>
+
+                        <li class="divider paper--bg-yellow-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FFFF8D</span>
+                        </li>
+                        <li class="paper--bg-yellow-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#FFFF00</span>
+                        </li>
+                        <li class="paper--bg-yellow-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#FFEA00</span>
+                        </li>
+                        <li class="paper--bg-yellow-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#FFD600</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-amber paper--color-primary">
+                            <span class="name">Amber</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#FFC107</span>
+                        </li>
+                        <li class="divider paper--bg-amber-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FFF8E1</span>
+                        </li>
+                        <li class="paper--bg-amber-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#FFECB3</span>
+                        </li>
+                        <li class="paper--bg-amber-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#FFE082</span>
+                        </li>
+                        <li class="paper--bg-amber-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#FFD54F</span>
+                        </li>
+                        <li class="paper--bg-amber-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#FFCA28</span>
+                        </li>
+                        <li class="paper--bg-amber paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#FFC107</span>
+                        </li>
+                        <li class="paper--bg-amber-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#FFB300</span>
+                        </li>
+                        <li class="paper--bg-amber-700 paper--color-primary">
+                            <span class="shade">700</span>
+                            <span class="hex">#FFA000</span>
+                        </li>
+                        <li class="paper--bg-amber-800 paper--color-primary">
+                            <span class="shade">800</span>
+                            <span class="hex">#FF8F00</span>
+                        </li>
+                        <li class="paper--bg-amber-900 paper--color-primary">
+                            <span class="shade">900</span>
+                            <span class="hex">#FF6F00</span>
+                        </li>
+
+                        <li class="divider paper--bg-amber-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FFE57F</span>
+                        </li>
+                        <li class="paper--bg-amber-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#FFD740</span>
+                        </li>
+                        <li class="paper--bg-amber-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#FFC400</span>
+                        </li>
+                        <li class="paper--bg-amber-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#FFAB00</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-orange paper--color-primary">
+                            <span class="name">Orange</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#FF9800</span>
+                        </li>
+                        <li class="divider paper--bg-orange-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FFF3E0</span>
+                        </li>
+                        <li class="paper--bg-orange-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#FFE0B2</span>
+                        </li>
+                        <li class="paper--bg-orange-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#FFCC80</span>
+                        </li>
+                        <li class="paper--bg-orange-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#FFB74D</span>
+                        </li>
+                        <li class="paper--bg-orange-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#FFA726</span>
+                        </li>
+                        <li class="paper--bg-orange paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#FF9800</span>
+                        </li>
+                        <li class="paper--bg-orange-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#FB8C00</span>
+                        </li>
+                        <li class="paper--bg-orange-700 paper--color-primary">
+                            <span class="shade">700</span>
+                            <span class="hex">#F57C00</span>
+                        </li>
+                        <li class="paper--bg-orange-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#EF6C00</span>
+                        </li>
+                        <li class="paper--bg-orange-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#E65100</span>
+                        </li>
+
+                        <li class="divider paper--bg-orange-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FFD180</span>
+                        </li>
+                        <li class="paper--bg-orange-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">#FFAB40</span>
+                        </li>
+                        <li class="paper--bg-orange-a400 paper--color-primary">
+                            <span class="shade">A400</span>
+                            <span class="hex">#FF9100</span>
+                        </li>
+                        <li class="paper--bg-orange-a700 paper--color-primary">
+                            <span class="shade">A700</span>
+                            <span class="hex">#FF6D00</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-deep-orange">
+                            <span class="name">Deep Orange</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#FF5722</span>
+                        </li>
+                        <li class="divider paper--bg-deep-orange-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FBE9E7</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#FFCCBC</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#FFAB91</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#FF8A65</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#FF7043</span>
+                        </li>
+                        <li class="paper--bg-deep-orange">
+                            <span class="shade">500</span>
+                            <span class="hex">#FF5722</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#F4511E</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#E64A19</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#D84315</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#BF360C</span>
+                        </li>
+
+                        <li class="divider paper--bg-deep-orange-a100 paper--color-primary">
+                            <span class="shade">A100</span>
+                            <span class="hex">#FF9E80</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-a200 paper--color-primary">
+                            <span class="shade">A200</span>
+                            <span class="hex">FF6E40</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-a400">
+                            <span class="shade">A400</span>
+                            <span class="hex">#FF3D00</span>
+                        </li>
+                        <li class="paper--bg-deep-orange-a700">
+                            <span class="shade">A700</span>
+                            <span class="hex">#DD2C00</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-brown">
+                            <span class="name">Brown</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#795548</span>
+                        </li>
+                        <li class="divider paper--bg-brown-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#EFEBE9</span>
+                        </li>
+                        <li class="paper--bg-brown-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#D7CCC8</span>
+                        </li>
+                        <li class="paper--bg-brown-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#BCAAA4</span>
+                        </li>
+                        <li class="paper--bg-brown-300">
+                            <span class="shade">300</span>
+                            <span class="hex">#A1887F</span>
+                        </li>
+                        <li class="paper--bg-brown-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#8D6E63</span>
+                        </li>
+                        <li class="paper--bg-brown">
+                            <span class="shade">500</span>
+                            <span class="hex">#795548</span>
+                        </li>
+                        <li class="paper--bg-brown-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#6D4C41</span>
+                        </li>
+                        <li class="paper--bg-brown-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#5D4037</span>
+                        </li>
+                        <li class="paper--bg-brown-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#4E342E</span>
+                        </li>
+                        <li class="paper--bg-brown-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#3E2723</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-grey paper--color-primary">
+                            <span class="name">Grey</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#9E9E9E</span>
+                        </li>
+                        <li class="divider paper--bg-grey-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#FAFAFA</span>
+                        </li>
+                        <li class="paper--bg-grey-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#F5F5F5</span>
+                        </li>
+                        <li class="paper--bg-grey-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#EEEEEE</span>
+                        </li>
+                        <li class="paper--bg-grey-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#E0E0E0</span>
+                        </li>
+                        <li class="paper--bg-grey-400 paper--color-primary">
+                            <span class="shade">400</span>
+                            <span class="hex">#BDBDBD</span>
+                        </li>
+                        <li class="paper--bg-grey paper--color-primary">
+                            <span class="shade">500</span>
+                            <span class="hex">#9E9E9E</span>
+                        </li>
+                        <li class="paper--bg-grey-600 paper--color-primary">
+                            <span class="shade">600</span>
+                            <span class="hex">#757575</span>
+                        </li>
+                        <li class="paper--bg-grey-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#616161</span>
+                        </li>
+                        <li class="paper--bg-grey-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#424242</span>
+                        </li>
+                        <li class="paper--bg-grey-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#212121</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0" style="clear: left;">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="paper--bg-blue-grey">
+                            <span class="name">Blue Grey</span>
+                            <span class="shade">500</span>
+                            <span class="hex">#607D8B</span>
+                        </li>
+                        <li class="divider paper--bg-blue-grey-50 paper--color-primary">
+                            <span class="shade">50</span>
+                            <span class="hex">#ECEFF1</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-100 paper--color-primary">
+                            <span class="shade">100</span>
+                            <span class="hex">#CFD8DC</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-200 paper--color-primary">
+                            <span class="shade">200</span>
+                            <span class="hex">#B0BEC5</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-300 paper--color-primary">
+                            <span class="shade">300</span>
+                            <span class="hex">#90A4AE</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-400">
+                            <span class="shade">400</span>
+                            <span class="hex">#78909C</span>
+                        </li>
+                        <li class="paper--bg-blue-grey">
+                            <span class="shade">500</span>
+                            <span class="hex">#607D8B</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-600">
+                            <span class="shade">600</span>
+                            <span class="hex">#546E7A</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-700">
+                            <span class="shade">700</span>
+                            <span class="hex">#455A64</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-800">
+                            <span class="shade">800</span>
+                            <span class="hex">#37474F</span>
+                        </li>
+                        <li class="paper--bg-blue-grey-900">
+                            <span class="shade">900</span>
+                            <span class="hex">#263238</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group paper--color-white">
+                    <ul>
+                        <li class="divider paper--bg-black">
+                            <span class="shade">Black</span>
+                            <span class="hex">#000000</span>
+                        </li>
+                        <li class="divider paper--bg-white paper--color-primary">
+                            <span class="shade">White</span>
+                            <span class="hex">#FFFFFF</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+
+        <div class="row">
+            <hr class="separator">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="module">
+                    <h4 class="paper--primary-color paper-text--headline" id="text-bg-colors">Text and background colors</h4>
+                    <h5 class="paper-text--body2">Text opacity</h5>
+                    <p>
+                        Text may be displayed with different degrees of opacity to convey how important certain information is relative to other information. The level of opacity used for text depends on whether your background is darker or lighter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">Usage</h5>
+                    <p>
+                        You are able to change the opacity of a text using following class names <code>.paper--color-primary</code>,
+                        <code>.paper--color-secondary</code>, <code>.paper--color-disabled</code>, and <code>.paper--color-divider</code> which represents
+                        <em>primary</em>, <em>secondary</em>, <em>disabled</em>, and <em>divider</em> text accordingly.
+                    </p>
+                    <p>Replace <code>color</code> with <code>bg</code> to use as element's background color.</p>
+                    <p>Add <code>.paper--dark</code> to parent container to switch its children theme to the dark one.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12" style="clear: left;">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">Dark text on light backgrounds</h5>
+                    <p>
+                        For dark text on light backgrounds, apply the following opacity levels:
+                    </p>
+                    <ul>
+                        <li>The most important text has an opacity of 87%.</li>
+                        <li>Secondary text, which is lower in the visual hierarchy, has an opacity of 54%.</li>
+                        <li>Text hints (like those in text fields and labels) and disabled text have even lower visual
+                            prominence with an opacity of 38%.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group group2">
+                    <ul>
+                        <li class="paper--bg-grey-300 paper--color-primary">
+                            <span class="shade">Primary text</span>
+                            <span class="hex">87%</span>
+                        </li>
+                        <li class="paper--bg-grey-300 paper--color-secondary">
+                            <span class="shade">Secondary text</span>
+                            <span class="hex">54%</span>
+                        </li>
+                        <li class="paper--bg-grey-300 paper--color-disabled">
+                            <span class="shade">Disabled/Hint text</span>
+                            <span class="hex">38%</span>
+                        </li>
+                        <li class="paper--bg-grey-300 paper--color-divider">
+                            <span class="shade">Divider text</span>
+                            <span class="hex">12%</span>
+                        </li>
+
+                        <li class="divider paper--primary-bg paper--color-white">
+                            <span class="shade">Primary color</span>
+                            <span class="hex">100%</span>
+                        </li>
+                        <li class="paper--accent-bg paper--color-white">
+                            <span class="shade">Accent color</span>
+                            <span class="hex">100%</span>
+                        </li>
+                    </ul>
+                    <div class="paper-text--caption">Dark text on light backgrounds</div>
+                </section>
+            </div>
+
+            <div class="col-lg-5 col-md-8 col-sm-6 col-xs-12" style="clear: left;">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">White text on dark backgrounds</h5>
+                    <p>The table values relay relative levels of importance for white text on dark backgrounds.</p>
+                    <p>White text appearing on colored backgrounds should do so at an opacity of 100%.</p>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-10 col-xs-offset-1 col-sm-offset-0">
+                <section class="color-group group2">
+                    <ul class="paper--dark">
+                        <li class="paper--bg-grey-900 paper--color-primary">
+                            <span class="shade">Primary text</span>
+                            <span class="hex">87%</span>
+                        </li>
+                        <li class="paper--bg-grey-900 paper--color-secondary">
+                            <span class="shade">Secondary text</span>
+                            <span class="hex">54%</span>
+                        </li>
+                        <li class="paper--bg-grey-900 paper--color-disabled">
+                            <span class="shade">Disabled/Hint text</span>
+                            <span class="hex">38%</span>
+                        </li>
+                        <li class="paper--bg-grey-900 paper--color-divider">
+                            <span class="shade">Divider text</span>
+                            <span class="hex">12%</span>
+                        </li>
+
+                        <li class="divider paper--primary-bg paper--color-white">
+                            <span class="shade">Primary color</span>
+                            <span class="hex">100%</span>
+                        </li>
+                        <li class="paper--accent-bg paper--color-white">
+                            <span class="shade">Accent color</span>
+                            <span class="hex">100%</span>
+                        </li>
+                    </ul>
+                    <div class="paper-text--caption">White text on dark backgrounds</div>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="paper-text--caption paper--color-secondary"><b>&copy; 2015-2016 Paper UI.</b><br/> Code licensed under the <a href="https://github.com/paper-ui/core-styles/blob/master/LICENSE">MIT License</a>. Documentation licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
