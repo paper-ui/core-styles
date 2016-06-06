@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Typography - Core Styles - Paper UI</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico?v=0"/>
+    <link rel="stylesheet" href="node_modules/bootstrap-grid/dist/grid.min.css">
+    <link rel="stylesheet" href="paper-ui.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="page-header--fixed paper--primary-bg paper-shadow--level-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="toolbar">
+                        <div class="empty-menu-btn visible-xs-block visible-sm-block"></div>
+                        <span class="paper--color-white paper-text--headline">Paper UI Core Styles - Typography</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="page-header paper--primary-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="paper--color-white hidden-xs">Paper UI Core Styles</h2>
+                    <h4 class="paper--color-white hidden-lg hidden-md hidden-sm" style="padding: 0 20px;">Paper UI Core
+                        Styles - Color</h4>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="module section-title">
+                    <h4 class="paper--primary-color">Typography</h4>
+                    <span class="paper-text--title">Roboto and Noto are the standard typefaces.</span>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="clear: left;">
+                <div class="module">
+                    <nav class="paper-chapter-toc">
+                        <h1>Contents</h1>
+                        <ul>
+                            <li><a href="#styles">Styles</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="module">
+                    <h4 class="paper--primary-color paper-text--headline" id="styles">Styles</h4>
+                    <p>
+                        Too many type sizes and styles at once can wreck any layout. A typographic scale has a limited set of type sizes that work well together along with the layout grid.
+                    </p>
+                    <p>
+                        These sizes and styles were developed to balance content density and reading comfort under typical usage conditions. Type sizes are specified with sp (scaleable pixels) to enable large type modes for accessibility.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">Usage</h5>
+                    <p>
+                        All the typography class names follows next formatting rules: <code>.paper-text--{type}</code>,
+                        <br>
+                        where <code>{type}</code> one of the following values: <em>display4</em>, <em>display3</em>,
+                        <em>display2</em>, <em>display1</em>, <em>headline</em>, <em>title</em>, <em>subheading</em>,
+                        <em>body2</em>, <em>body1</em>, <em>caption</em>, <em>button</em>.
+                    </p>
+                    <p>
+                        Moreover, some of those class names are already bound to HTML5 tags for you: <em>display4</em> as
+                        <code>&lt;h1&gt;</code>, <em>display3</em> as <code>&lt;h2&gt;</code>, <em>display2</em> as <code>&lt;h3&gt;</code>,
+                        <em>display1</em> as <code>&lt;h4&gt;</code>, and <em>body1</em> as <code>&lt;p&gt;</code>.
+                    <p>
+                        Let's say you want to fill some element within purple color with the shade of 700. In this case needed class name will look like following: <code>.paper--bg-purple-700</code>.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-5 col-md-8 col-sm-8 col-xs-12" style="clear: left;">
+                <div class="submodule">
+                    <h5 class="paper-text--body2">Basic set</h5>
+                    <p>
+                        The basic set of styles are based on a typographic scale of 12, 14, 16, 20, and 34.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-lg-7 col-md-8 col-sm-10 col-xs-12 col-xs-offset-0 col-sm-offset-0">
+                <section class="color-group group2">
+                    <img src="http://material-design.storage.googleapis.com/publish/material_v_8/material_ext_publish/0Bzhp5Z4wHba3alhXZ2pPWGk3Zjg/style_typography_styles_scale.png"
+                         alt="Basic set" style="max-width: 100%;">
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="paper-text--caption paper--color-secondary"><b>&copy; 2015-2016 Paper UI.</b><br/> Code
+                        licensed under the <a href="https://github.com/paper-ui/core-styles/blob/master/LICENSE">MIT
+                            License</a>. Documentation licensed under <a
+                                href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
