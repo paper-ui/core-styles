@@ -170,83 +170,43 @@ $default-icon-button-padding: 8px;
     display: inline-block;
 }
 
-// TODO: apply dark theme styling
-//@mixin paper-dark-button(
-//    $raised-button-class-name: name('raised'),
-//    $fab-class-name: name('fab'),
-//    $icon-button-class-name: name('icon-button')
-//) {
-//    color: paper-text-color('primary', true);
-//
-//    &:not(.#{$raised-button-class-name}):not(.#{$fab-class-name}):not(.#{$icon-button-class-name}) {
-//        &:hover,
-//        &[focused] {
-//            background-color: rgba(#cccccc, 0.15);
-//        }
-//
-//        &:active {
-//            background-color: rgba(#cccccc, 0.25);
-//        }
-//    }
-//
-//    &.#{$raised-button-class-name},
-//    &.#{$fab-class-name} {
-//        background-color: paper-color($default-primary-color, '500');
-//
-//        &:hover,
-//        &[focused] {
-//            background-color: paper-color($default-primary-color, '600');
-//        }
-//
-//        &:active {
-//            background-color: paper-color($default-primary-color, '700');
-//        }
-//    }
-//
-//    &:disabled,
-//    &[disabled] {
-//        color: paper-text-color('disabled', true) !important;
-//
-//        &.#{$raised-button-class-name},
-//        &.#{$fab-class-name} {
-//            background-color: paper-text-color('divider', true) !important;
-//        }
-//    }
-//
-//    &[toggles][active] {
-//        background-color: rgba(paper-text-color('primary', true), 0.25);
-//    }
-//}
+@mixin paper-dark-button {
+    .paper-button {
+        color: paper-text-color('primary', true);
 
-// ===========================
-// Module classes
-// ===========================
-.paper-button,
-.paper-fab,
-.paper-icon-button {
-    @include paper-button-base;
-}
+        &--hover:hover {
+            background-color: rgba(#cccccc, 0.15);
+        }
 
-.paper-button {
-    @include paper-button;
-}
+        &:not(&--raised):active {
+            background-color: rgba(#cccccc, 0.25);
+        }
 
-.paper-fab {
-    @include paper-fab;
-}
+        &--raised,
+        .paper-fab {
+            background-color: paper-color($default-primary-color, '500');
 
-.paper-icon-button {
-    @include paper-icon-button;
-}
+            &--focus {
+                background-color: paper-color($default-primary-color, '600');
+            }
 
-.paper-button--raised,
-.paper-button--toggles,
-.paper-fab {
-    @include button-raised;
-}
+            &:active {
+                background-color: paper-color($default-primary-color, '700');
+            }
 
-a.paper-button,
-a.paper-fab,
-a.paper-icon-button {
-    @include anchor-paper-button;
+            &:disabled,
+            &[disabled] {
+                background-color: paper-text-color('divider', true) !important;
+            }
+        }
+
+        &:disabled,
+        &[disabled] {
+            color: paper-text-color('disabled', true) !important;
+        }
+
+        &--toggles.paper-button--active {
+            background-color: rgba(paper-text-color('primary', true), 0.25);
+        }
+    }
 }

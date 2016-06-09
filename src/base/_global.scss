@@ -1,5 +1,11 @@
 @charset "UTF-8";
-@import "../helpers/variables", "./typography", "./shadows";
+@import
+    "../helpers/mixins",
+    "./typography",
+    "./shadows",
+    "../components/chapter-toc",
+    "../components/ripple",
+    "../components/buttons";
 
 /**
  * This file\code is part of Paper UI project.
@@ -44,14 +50,77 @@ strong {
 em {
     font-style: italic;  }
 
-// typography
+a {
+    color: paper-color($default-accent-color);
+    text-decoration: none;  }
+
+// Typography
 @include paper-typography-classes;
 
-// shadows
+// Shadows
 @include paper-shadow-classes;
 
 .paper {
+    // Colors
     @include paper-color-classes;
     @include paper-color-shades-classes;
     @include paper-text-color-classes;
+
+    &--primary-color {
+        @extend %primary-color;
+    }
+
+    &--primary-bg {
+        @extend %primary-bg;
+    }
+
+    &--accent-color {
+        @extend %accent-color;
+    }
+
+    &--accent-bg {
+        @extend %accent-bg;
+    }
+
+    // Chapter TOC
+    &-chapter-toc {
+        @include paper-chapter-toc;
+    }
+
+    // Ripple
+    &-ripple {
+        @include paper-ripple;
+    }
+
+    // Buttons
+    &-button,
+    &-fab,
+    &-icon-button {
+        @include paper-button-base;
+    }
+
+    &-button {
+        @include paper-button;
+    }
+
+    &-fab {
+        @include paper-fab;
+    }
+
+    &-icon-button {
+        @include paper-icon-button;
+    }
+
+    &-button--raised,
+    &-button--toggles,
+    &-fab {
+        @include button-raised;
+    }
+}
+
+// Anchors
+a.paper-button,
+a.paper-fab,
+a.paper-icon-button {
+    @include anchor-paper-button;
 }

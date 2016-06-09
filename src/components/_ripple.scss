@@ -52,10 +52,3 @@
         @extend %circle-el;
     }
 }
-
-// ===========================
-// Module classes
-// ===========================
-.paper-ripple {
-    @include paper-ripple;
-}
