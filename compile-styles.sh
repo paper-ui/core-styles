@@ -17,5 +17,6 @@ else
 fi
 
 node-sass --output-style 'nested' src/paper-ui.scss examples/paper-ui.css
+node-sass --output-style 'nester' src/paper-ui-dark.scss examples/paper-ui-dark.css
 
 exit
