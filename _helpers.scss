@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// ===========================
+// Helper functions
+// ===========================
+
+// Source http://sassmeister.com/gist/1b4f2da5527830088e4d
+/// Replace `$search` with `$replace` in `$string`
+/// @author Hugo Giraudel
+/// @param {String} $string - Initial string
+/// @param {String} $search - Substring to replace
+/// @param {String} $replace ('') - New value
+/// @return {String} - Updated string
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+@function name($suffix: '') {
+    @return $default-class-name-prefix + $suffix;
+}
+
+// ===========================
+// Helper mixins
+// ===========================
+
+// IE10+, Chrome (p), Opera 12+(p)/12.1+, Safari 4+(p), Firefox 5+(p)/16+
+// $browsers: webkit = true, moz = true, o = true
+@mixin keyframes($name, $browsers: true true true) {
+    @if nth($browsers, 1) == true {
+        @-webkit-keyframes #{$name} {
+            @content;
+        }
+    }
+
+    @if nth($browsers, 2) == true {
+        @-moz-keyframes #{$name} {
+            @content;
+        }
+    }
+
+    @if nth($browsers, 3) == true {
+        @-o-keyframes #{$name} {
+            @content;
+        }
+    }
+
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+// TODO:
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    @include transform(translateY(-50%));
+}
+
+// TODO: Review and separate
+@mixin paper-loading-animation {
+    // name | duration | easing | delay | iteration-count | direction | fill-mode | play-state
+    @include animation(paper-loading-animation 3s $default-easing-function 0s 1 normal forwards);
+
+    @include keyframes('paper-loading-animation') {
+        0% {
+            @include filter(opacity(0%) grayscale(100%) saturate(0%));
+        }
+        50% {
+            @include filter(opacity(100%) grayscale(33%) saturate(50%)); // grayscale 66%
+        }
+        75% {
+            @include filter(grayscale(0%) saturate(25%));
+        }
+        100% {
+            @include filter(saturate(100%));
+        }
+    }
+}
+
+
+
+%paper-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: paper-text-color('secondary');
+    opacity: 0;
+    visibility: hidden;
+
+    @include transition(opacity 0.25s $default-easing-function);
+}
+
+%show-mask {
+    opacity: 1;
+    visibility: visible;
+}
+
+%hide-mask {
+    opacity: 0;
+    visibility: hidden;
+}
+
+%avatar {
+
+}
+
+//.abs {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//}
+//
+//.vertical-center {
+//  @include vertical-center;
+//}
+//
+//.absolute-center {
+//  position: absolute;
+//  top: 50%;
+//  left: 50%;
+//  @include transform(translate(-50%, -50%));
+//}

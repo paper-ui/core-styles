@@ -1,14 +1,271 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Components - Core Styles - Paper UI</title>
+    <meta name="description" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/ico" href="favicon.ico?v=0"/>
     <link rel="stylesheet" href="node_modules/bootstrap-grid/dist/grid.min.css">
     <link rel="stylesheet" href="paper-ui.css">
+    <link rel="stylesheet" href="paper-ui-dark.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="container">
-    </section>
+<header class="page-header--fixed paper--primary-bg paper-shadow--level-1">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="toolbar">
+                    <div class="empty-menu-btn visible-xs-block visible-sm-block"></div>
+                    <span class="paper--color-white paper-text--headline">Paper UI Core Styles - Components</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<header class="page-header paper--primary-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h2 class="paper--color-white hidden-xs">Paper UI Core Styles</h2>
+                <h4 class="paper--color-white hidden-lg hidden-md hidden-sm" style="padding: 0 20px;">Paper UI Core
+                    Styles - Color</h4>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="container">
+    <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="module section-title">
+                <h4 class="paper--primary-color">Components</h4>
+                <span class="paper-text--title">TODO:</span>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="clear: left;">
+            <div class="module">
+                <nav class="paper-chapter-toc">
+                    <h1>Contents</h1>
+                    <ul>
+                        <li><a href="#shadows">Shadows</a></li>
+                        <li><a href="#buttons">Buttons</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="module">
+                <h4 class="paper--primary-color paper-text--headline" id="shadows">Shadows</h4>
+                <p>
+                    Shadows provide important visual cues about objects’ depth and directional movement. They are the only visual cue indicating the amount of separation between surfaces. An object’s elevation determines the appearance of its shadow.
+                </p>
+                <p>
+                    In motion, shadows provide useful cues about an object’s direction of movement and whether the distance between surfaces is increasing or decreasing.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0" style="clear: left;">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <div class="demo-shadow-rect paper-shadow--level-1"></div>
+                </figure>
+                <div class="paper-text--caption">Example shadow with the elevation of 1</div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <div class="demo-shadow-rect paper-shadow--level-2"></div>
+                </figure>
+                <div class="paper-text--caption">Example shadow with the elevation of 2</div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <div class="demo-shadow-rect paper-shadow--level-3"></div>
+                </figure>
+                <div class="paper-text--caption">Example shadow with the elevation of 3</div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <div class="demo-shadow-rect paper-shadow--level-4"></div>
+                </figure>
+                <div class="paper-text--caption">Example shadow with the elevation of 4</div>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-8 col-xs-offset-2 col-sm-offset-0">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <div class="demo-shadow-rect paper-shadow--level-5"></div>
+                </figure>
+                <div class="paper-text--caption">Example shadow with the elevation of 5</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row no-gutter">
+        <hr class="separator">
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+            <div class="module">
+                <h4 class="paper--primary-color paper-text--headline" id="buttons">Buttons</h4>
+                <p>
+                    Buttons communicate the action that will occur when the user touches them.
+                </p>
+                <p>
+                    Material buttons trigger an ink reaction on press. They may display text, imagery, or both. Flat buttons and raised buttons are the most commonly used types.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-8 col-sm-6 col-xs-12" style="clear: left;">
+            <div class="submodule">
+                <h5 class="paper-text--body2">Flat buttons</h5>
+                <p>
+                    Flat buttons are printed on material. They do not lift, but fill with color on press.
+                </p>
+                <p>Use flat buttons in the following locations:</p>
+                <ul>
+                    <li>On toolbars.</li>
+                    <li>In dialogs, to unify the button action with the dialog content.</li>
+                    <li>Inline, with padding, so the user can easily find them.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <button class="paper-button">Normal</button>
+                    <button class="paper-button paper-button--hover">Hover</button>
+                    <button class="paper-button" disabled>Disabled</button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure paper--dark">
+                    <button class="paper-button">Normal</button>
+                    <button class="paper-button paper-button--hover">Hover</button>
+                    <button class="paper-button" disabled>Disabled</button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-8 col-sm-6 col-xs-12" style="clear: left;">
+            <div class="submodule">
+                <h5 class="paper-text--body2">Raised buttons</h5>
+                <p>
+                    Raised buttons add dimension to mostly flat layouts. They emphasize functions on busy or wide spaces.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <button class="paper-button paper-button--raised">Normal</button>
+                    <button class="paper-button paper-button--raised paper-button--raised--focus">Focused</button>
+                    <button class="paper-button paper-button--raised paper-button--toggles paper-button--active">Toggles</button>
+                    <button class="paper-button paper-button--raised paper--bg-green paper--color-white">Colored</button>
+                    <button class="paper-button paper-button--raised" disabled>Disabled</button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure paper--dark">
+                    <button class="paper-button paper-button--raised">Normal</button>
+                    <button class="paper-button paper-button--raised paper-button--raised--focus">Focused</button>
+                    <button class="paper-button paper-button--raised paper-button--toggles paper-button--active">Toggles</button>
+                    <button class="paper-button paper-button--raised paper--bg-green paper--color-white">Colored</button>
+                    <button class="paper-button paper-button--raised" disabled>Disabled</button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-8 col-sm-6 col-xs-12" style="clear: left;">
+            <div class="submodule">
+                <h5 class="paper-text--body2">Icon buttons</h5>
+                <p>
+                    Icons are appropriate for toggle buttons that allow a single choice to be selected or deselected, such as adding or removing a star to an item.
+                </p>
+                <p>They are best located in app bars, toolbars, action buttons or toggles.</p>
+                <p>Icon toggles may display bounded or unbounded ink surface reaction ripples beyond their touch-target
+                    bounds.</p>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure">
+                    <button class="paper-icon-button">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                    <button class="paper-icon-button paper-button--hover">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                    <button class="paper-icon-button" disabled>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            <div class="module2">
+                <figure class="demo-figure paper--dark">
+                    <button class="paper-icon-button">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                    <button class="paper-icon-button paper-button--hover">
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                    <button class="paper-icon-button" disabled>
+                        <svg viewBox="0 0 24 24" preserveAspectRatio="xMidYMid meet" style="pointer-events: none; display: block; width: 100%; height: 100%;"><g fill="#6d6d6d"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path></g></svg>
+                    </button>
+                </figure>
+                <div class="paper-text--caption">Example raised button</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="paper-text--caption paper--color-secondary"><b>&copy; 2015-2016 Paper UI.</b><br/> Code
+                    licensed under the <a href="https://github.com/paper-ui/core-styles/blob/master/LICENSE">MIT
+                        License</a>. Documentation licensed under <a
+                            href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

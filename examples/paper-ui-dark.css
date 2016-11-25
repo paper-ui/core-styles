@@ -1,0 +1,238 @@
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+body.paper--dark {
+  color: white;
+  background-color: #303030; }
+
+.paper--dark h1,
+.paper--dark .paper-text--display4 {
+  color: rgba(255, 255, 255, 0.7); }
+
+.paper--dark h2,
+.paper--dark .paper-text--display3 {
+  color: rgba(255, 255, 255, 0.7); }
+
+.paper--dark h3,
+.paper--dark .paper-text--display2 {
+  color: rgba(255, 255, 255, 0.7); }
+
+.paper--dark h4,
+.paper--dark .paper-text--display1 {
+  color: rgba(255, 255, 255, 0.7); }
+
+
+.paper--dark .paper-text--headline {
+  color: white; }
+
+
+.paper--dark .paper-text--title {
+  color: white; }
+
+
+.paper--dark .paper-text--subhead {
+  color: white; }
+
+
+.paper--dark .paper-text--body2 {
+  color: white; }
+
+.paper--dark p,
+.paper--dark .paper-text,
+.paper--dark .paper-text--body1 {
+  color: white; }
+
+
+.paper--dark .paper-text--caption {
+  color: rgba(255, 255, 255, 0.7); }
+
+
+.paper--dark .paper-text--button {
+  color: white; }
+
+.paper--dark .paper--color-primary {
+  color: rgba(255, 255, 255, 0.87) !important; }
+
+.paper--dark .paper--bg-primary {
+  background-color: rgba(255, 255, 255, 0.87) !important; }
+
+.paper--dark .paper--color-secondary {
+  color: rgba(255, 255, 255, 0.54) !important; }
+
+.paper--dark .paper--bg-secondary {
+  background-color: rgba(255, 255, 255, 0.54) !important; }
+
+.paper--dark .paper--color-disabled {
+  color: rgba(255, 255, 255, 0.26) !important; }
+
+.paper--dark .paper--bg-disabled {
+  background-color: rgba(255, 255, 255, 0.26) !important; }
+
+.paper--dark .paper--color-divider {
+  color: rgba(255, 255, 255, 0.12) !important; }
+
+.paper--dark .paper--bg-divider {
+  background-color: rgba(255, 255, 255, 0.12) !important; }
+
+.paper--dark .paper-button, .paper--dark .paper-fab, .paper--dark .paper-icon-button {
+  color: white; }
+  .paper--dark .paper-button--hover:hover, .paper--dark .paper-fab--hover:hover, .paper--dark .paper-icon-button--hover:hover {
+    background-color: rgba(204, 204, 204, 0.15); }
+  .paper--dark .paper-button:not(.paper--dark .paper-button--raised, .paper--dark .paper-fab--raised, .paper--dark .paper-icon-button--raised):active, .paper--dark .paper-fab:not(.paper--dark .paper-button--raised, .paper--dark .paper-fab--raised, .paper--dark .paper-icon-button--raised):active, .paper--dark .paper-icon-button:not(.paper--dark .paper-button--raised, .paper--dark .paper-fab--raised, .paper--dark .paper-icon-button--raised):active {
+    background-color: rgba(204, 204, 204, 0.25); }
+  .paper--dark .paper-button--raised,
+  .paper--dark .paper-button .paper-fab, .paper--dark .paper-fab--raised,
+  .paper--dark .paper-fab .paper-fab, .paper--dark .paper-icon-button--raised,
+  .paper--dark .paper-icon-button .paper-fab {
+    background-color: #3F51B5; }
+    .paper--dark .paper-button--raised--focus,
+    .paper--dark .paper-button .paper-fab--focus, .paper--dark .paper-fab--raised--focus,
+    .paper--dark .paper-fab .paper-fab--focus, .paper--dark .paper-icon-button--raised--focus,
+    .paper--dark .paper-icon-button .paper-fab--focus {
+      background-color: #3949AB; }
+    .paper--dark .paper-button--raised:active,
+    .paper--dark .paper-button .paper-fab:active, .paper--dark .paper-fab--raised:active,
+    .paper--dark .paper-fab .paper-fab:active, .paper--dark .paper-icon-button--raised:active,
+    .paper--dark .paper-icon-button .paper-fab:active {
+      background-color: #303F9F; }
+    .paper--dark .paper-button--raised:disabled, .paper--dark .paper-button--raised[disabled],
+    .paper--dark .paper-button .paper-fab:disabled,
+    .paper--dark .paper-button .paper-fab[disabled], .paper--dark .paper-fab--raised:disabled, .paper--dark .paper-fab--raised[disabled],
+    .paper--dark .paper-fab .paper-fab:disabled,
+    .paper--dark .paper-fab .paper-fab[disabled], .paper--dark .paper-icon-button--raised:disabled, .paper--dark .paper-icon-button--raised[disabled],
+    .paper--dark .paper-icon-button .paper-fab:disabled,
+    .paper--dark .paper-icon-button .paper-fab[disabled] {
+      background-color: rgba(255, 255, 255, 0.12) !important; }
+  .paper--dark .paper-button:disabled, .paper--dark .paper-button[disabled], .paper--dark .paper-fab:disabled, .paper--dark .paper-fab[disabled], .paper--dark .paper-icon-button:disabled, .paper--dark .paper-icon-button[disabled] {
+    color: rgba(255, 255, 255, 0.3) !important; }
+  .paper--dark .paper-button--toggles.paper-button--active, .paper--dark .paper-fab--toggles.paper-button--active, .paper--dark .paper-icon-button--toggles.paper-button--active {
+    background-color: rgba(255, 255, 255, 0.25); }

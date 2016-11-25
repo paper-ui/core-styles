@@ -1,0 +1,36 @@
+@charset "UTF-8";
+@import "./colors", "./typography", "../components/buttons";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+body.paper--dark {
+    color: paper-text-color('primary', true);
+    background-color: #303030;
+}
+
+.paper--dark {
+    // Typography
+    @include paper-dark-typography-classes;
+
+    .paper {
+        // Text colors
+        @include paper-dark-text-color-classes;
+
+        // Buttons
+        &-button,
+        &-fab,
+        &-icon-button {
+            @include paper-dark-button;
+        }
+    }
+}

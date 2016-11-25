@@ -171,42 +171,40 @@ $default-icon-button-padding: 8px;
 }
 
 @mixin paper-dark-button {
-    .paper-button {
-        color: paper-text-color('primary', true);
+    color: paper-text-color('primary', true);
 
-        &--hover:hover {
-            background-color: rgba(#cccccc, 0.15);
+    &--hover:hover {
+        background-color: rgba(#cccccc, 0.15);
+    }
+
+    &:not(&--raised):active {
+        background-color: rgba(#cccccc, 0.25);
+    }
+
+    &--raised,
+    .paper-fab {
+        background-color: paper-color($default-primary-color, '500');
+
+        &--focus {
+            background-color: paper-color($default-primary-color, '600');
         }
 
-        &:not(&--raised):active {
-            background-color: rgba(#cccccc, 0.25);
-        }
-
-        &--raised,
-        .paper-fab {
-            background-color: paper-color($default-primary-color, '500');
-
-            &--focus {
-                background-color: paper-color($default-primary-color, '600');
-            }
-
-            &:active {
-                background-color: paper-color($default-primary-color, '700');
-            }
-
-            &:disabled,
-            &[disabled] {
-                background-color: paper-text-color('divider', true) !important;
-            }
+        &:active {
+            background-color: paper-color($default-primary-color, '700');
         }
 
         &:disabled,
         &[disabled] {
-            color: paper-text-color('disabled', true) !important;
+            background-color: paper-text-color('divider', true) !important;
         }
+    }
 
-        &--toggles.paper-button--active {
-            background-color: rgba(paper-text-color('primary', true), 0.25);
-        }
+    &:disabled,
+    &[disabled] {
+        color: paper-text-color('disabled', true) !important;
+    }
+
+    &--toggles.paper-button--active {
+        background-color: rgba(paper-text-color('primary', true), 0.25);
     }
 }

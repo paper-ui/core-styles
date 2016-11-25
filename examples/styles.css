@@ -166,3 +166,45 @@ code, pre {
     float: right;
     text-transform: uppercase;
 }
+
+/* components */
+.no-gutter > div[class*="col"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.module2 {
+    margin: 0 20px 40px 20px;
+}
+
+.demo-figure {
+    background: #EEEEEE;
+    width: 100%;
+    margin: 0;
+    position: relative;
+    padding: 50px 0;
+    box-sizing: border-box;
+}
+
+.demo-figure.paper--dark {
+    background-color: #333333;
+}
+
+.demo-figure > .demo-shadow-rect,
+.demo-figure > button {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    display: block;
+}
+
+.demo-figure > button:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.demo-shadow-rect {
+    width: 100px;
+    height: 100px;
+    background: #FFF;
+    border-radius: 3px;
+}

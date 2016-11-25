@@ -1,0 +1,250 @@
+@charset "UTF-8";
+@import "../base/colors", "../base/shadows";
+
+/**
+ * This file\code is part of Paper UI project.
+ *
+ * Paper UI - is a modern front-end framework based on Material Design by Google
+ * https://github.com/paper-ui
+ *
+ * Copyright (c) 2016 Bohdan Shtepan
+ * http://modern-dev.com/
+ *
+ * Licensed under the MIT license.
+ */
+
+// ===========================
+// Module variables
+// ===========================
+$default-card-border-radius: 2px;
+$default-card-elevation: 2;
+$default-card-font-size: 14px;
+$default-card-avatar-size: 40px;
+$default-card-media-small-size: 80px;
+$default-card-media-medium-size: 112px;
+$default-card-media-big-size: 152px;
+
+// ===========================
+// Module mixins
+// ===========================
+@mixin paper-card {
+    border-radius: $default-card-border-radius;
+    position: relative;
+    background-color: paper-color('grey', '50');
+    color: paper-text-color('primary');
+    font-size: $default-card-font-size;
+    overflow: hidden;
+
+    @include paper-shadow(1);
+
+    .primary-title {
+        padding: 16px 16px 16px 16px;
+        overflow: hidden;
+
+        &:last-child {
+            padding-bottom: 24px;
+        }
+
+        div {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        div:not(.avatar) {
+            width: 100%;
+        }
+
+        .title {
+            font-size: 24px;
+        }
+
+        .subhead {
+            margin-top: 6px;
+            color: paper-text-color('secondary');
+        }
+
+        .avatar {
+            display: inline-block;
+            width: $default-card-avatar-size;
+            height: $default-card-avatar-size;
+            border-radius: 50%;
+            background: paper-color('grey', '500') center no-repeat;
+            background-size: cover;
+            margin-right: 16px;
+
+            & + div {
+                width: calc(100% - #{$default-card-avatar-size * 1.5});
+
+                .title {
+                    font-weight: 500;
+                    font-size: $default-card-font-size;
+                }
+
+                .subhead {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        span {
+            display: inline-block;
+            width: 100%;
+        }
+
+        .media {
+            float: right;
+        }
+
+        &.media-small {
+            & > div:not(.avatar):not(.media) {
+                width: calc(100% - #{$default-card-media-small-size});
+            }
+
+            .media {
+                width: $default-card-media-small-size;
+                height: $default-card-media-small-size;
+            }
+        }
+
+        &.media-medium {
+            & > div:not(.avatar):not(.media) {
+                width: calc(100% - #{$default-card-media-medium-size});
+            }
+
+            .media {
+                width: $default-card-media-medium-size;
+                height: $default-card-media-medium-size;
+            }
+        }
+
+        &.media-big {
+            & > div:not(.avatar):not(.media) {
+                width: calc(100% - #{$default-card-media-big-size});
+            }
+
+            .media {
+                width: $default-card-media-big-size;
+                height: $default-card-media-big-size;
+            }
+        }
+
+        & + .supporting-text {
+            padding-top: 0;
+        }
+    }
+
+    .supporting-text {
+        padding: 16px;
+
+        &:last-child {
+            padding-bottom: 24px;
+        }
+    }
+
+    .media {
+        min-height: 50px;
+        background: paper-color('grey', '500') center no-repeat;
+        background-size: cover;
+        border-radius: inherit;
+
+        & + .supporting-text {
+            padding-bottom: 16px;
+        }
+
+        & + .primary-title {
+            padding-top: 24px;
+        }
+    }
+
+    .actions,
+    .actions-vertical {
+        overflow: hidden;
+        button,
+        .#{name('button')} {
+            margin: 8px;
+        }
+
+        .#{name('icon-button')} {
+            margin: 6px 8px;
+        }
+
+        i,
+        .zmdi,
+        .#{name('icon-button')} {
+            color: paper-text-color('secondary');
+        }
+    }
+
+    .actions button {
+        &:not(:first-child) {
+            margin-left: 4px;
+        }
+    }
+
+    .actions-vertical button {
+        clear: both;
+        float: left;
+
+        &:not(:last-child) {
+            margin-bottom: 2px;
+        }
+
+        &:not(:first-child) {
+            margin-top: 2px;
+        }
+    }
+
+    .card-content {
+        position: absolute;
+        z-index: $default-card-elevation + 2; // +1 for media, +2 for content
+        left: 0;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        background-color: rgba(black, 0.5);
+        border-radius: inherit;
+
+        :first-child {
+            &.primary-title {
+                padding-top: 24px;
+            }
+        }
+
+        .title,
+        .subhead,
+        button,
+        .paper-button,
+        .supporting-text {
+            color: paper-text-color('primary', true);
+        }
+    }
+
+    &.#{name('raised')} {
+        @include transition(box-shadow 0.25s $default-easing-function);
+        @include paper-shadow(2);
+    }
+}
+
+@mixin paper-dark-card {
+    color: paper-text-color('primary', true);
+    background-color: paper-color('grey', '800');
+
+    .primary-title {
+        .subhead {
+            color: paper-text-color('secondary', true);
+        }
+    }
+
+    .actions,
+    .actions-vertical {
+        i,
+        .zmdi,
+        .#{name('icon-button')} {
+            color: paper-text-color('secondary', true);
+        }
+    }
+}
+
+// ===========================
+// Module classes
+// ===========================
